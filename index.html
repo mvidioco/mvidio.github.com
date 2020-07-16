@@ -3,8 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <title>Сочное видео</title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 </head>
 <body>
- ...    
+    
+    
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "eb270906-eb26-453f-b47c-fa4fc3b43027",
+    });
+  });
+</script>
 </body>
 </html>
