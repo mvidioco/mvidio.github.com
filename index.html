@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta http-equiv="refresh" content="0;URL=http://clickfrm.com/z7GH" />
   <meta charset="utf-8" />
   <title>Мои сочное видео</title>
 </head>
 <body>
 
+  <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "sportpokaz"
+  });
+</script>
+  
 </body>
 </html>
