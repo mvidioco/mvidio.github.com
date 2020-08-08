@@ -1,4 +1,0 @@
-﻿#EXTM3U
-#EXTINF: -1 tvg-id="ch057" tvg-rec="10" tvg-logo="http://api.itv.live/icon/ch057.png" group-title="Спорт", Матч! HD
-#EXTGRP:1. Спорт
-http://cloud02.02cdn.wf/ch057/video.m3u8?token=a1dd605f533e7eae2b0a7ea6e80ad8ba2f3a644c9
