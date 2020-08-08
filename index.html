@@ -12,42 +12,44 @@
 </script>
     
     <style type="text/css">
-  div.page-container {
-  max-width: 100%;
-  min-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  }
+ body, html { 
+    width: 100%;
+    height: 100%;
+}
 
-div.page-container-inner {
-  min-width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  }
-  </style>
+.div {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+        
+        .div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
     
     
 </head>
 <body>
         
-        <div class="page-container">
-      <div class="page-container-inner">
+        <div class="div">
+
 <img src="https://mvidio.co/logo.png"  width="300" alt="SportPokaz">
-      </div>
+
     </div>
             
 
         
-        <div class="page-container">
-      <div class="page-container-inner">
+        <div class="div">
         <!-- Add a placeholder for the Twitch embed -->
 <div id="twitch-embed"></div>
 
     <iframe src="https://player.twitch.tv/?channel=sportpokaz&parent=mvidio.co" frameborder="0" allowfullscreen="true" scrolling="no" height="300" ></iframe>
     
 
-      </div>
     </div>
 
 <!-- Load the Twitch embed script -->
