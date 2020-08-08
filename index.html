@@ -18,6 +18,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     
+    <style type="text/css">
+  div.page-container {
+  max-width: 75%;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+div.page-container-inner {
+  min-width: 960px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  }
+  </style>
+    
+    
 </head>
 <body>
 
@@ -31,12 +48,9 @@
       </div>
     </div>
   </div>
-    
-
-        
+            
         
   <div class="row">
-      <center>
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image">
@@ -55,11 +69,26 @@
           <p>Барселона-Наполи</p>
         </div>
     
+          
+          </div>
+        
+        <div class="page-container">
+      <div class="page-container-inner">
+        <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+    <iframe src="https://player.twitch.tv/?channel=sportpokaz&parent=mvidio.co" frameborder="0" allowfullscreen="true" scrolling="no" height="300" ></iframe>
+    
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
       </div>
     </div>
-      </center>          
+          
+      </div>
+    </div>
+          
 
-  </div>
+  
             
 
 
