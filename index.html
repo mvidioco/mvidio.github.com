@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Victorya Salon</title>
+  <title>Viktorya Salon</title>
     
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
@@ -19,6 +19,8 @@
 
 /* Make the image responsive */
 .container img {
+    max-width:1280px;
+    max-height:920px;
    width: 100%; /* Ширина изображений */
  height: 100%; /* Высота изображении */
  object-fit: cover; /* Вписываем фотографию в область */
@@ -42,7 +44,7 @@
         
 .container .btn2 {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 75%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -68,15 +70,12 @@
     
     <div class="container">
   <img src="1.jpg" alt="Snow">
-  <button class="btn">Video</button>
-<button class="btn2">Foto</button>
+        
+        <form>
+	<input class="btn" type="button" value="Video" onclick="javascript:window.location='URL1'"/>
+	<input class="btn2" type="button" value="Foto" onclick="javascript:window.location='URL2'"/>
+</form>
+           
 </div> 
-
-    
-    
- 
-   
-    
-    
 </body>
 </html>
