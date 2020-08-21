@@ -11,45 +11,71 @@
   vkBridge.send('VKWebAppInit');
 </script>
 
-    <style>
-figure {
- 
- margin: 0; /* Обнуляем отступы */
-    padding-top: 60px;
-
+    <style>    
+.container {
+  position: relative;
+  width: 100%;
 }
-figure img { 
- width: 100%; /* Ширина изображений */
+
+/* Make the image responsive */
+.container img {
+   width: 100%; /* Ширина изображений */
  height: 100%; /* Высота изображении */
  object-fit: cover; /* Вписываем фотографию в область */
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #5455;
+  color: white;
+  font-size: 30px;
+  padding: 10px 52px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+        
+.container .btn2 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #5455;
+  color: white;
+  font-size: 30px;
+  padding: 10px 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: red;
+        }
+    .container .btn2:hover {
+  background-color: green;
 }
         </style>
 
 </head>
 <body>
-    <figure>
-        <img src="https://mvidio.co/logo.png" alt="SportPokaz">
-        <img src="https://mvidio.co/bn.png" alt="Барселона-Наполи">
-        
-        <iframe src="https://player.twitch.tv/?channel=sportpokaz&parent=mvidio.co" frameborder="0" allowfullscreen="true" scrolling="no" height="300" width="100%" ></iframe>
-        
-        
-    </figure>
- 
-       
-            
-       
     
-                <!-- Add a placeholder for the Twitch embed -->
+    <div class="container">
+  <img src="1.jpg" alt="Snow">
+  <button class="btn">Video</button>
+<button class="btn2">Foto</button>
+</div> 
 
-
-
-
-
-
-<!-- Load the Twitch embed script -->
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-                
+    
+    
+ 
+   
     
     
 </body>
