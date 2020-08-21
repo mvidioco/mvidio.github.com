@@ -2,29 +2,80 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Viktorya Salon</title>
-  
-  <form>
-      <input type="button" onclick="window.location.href = 'https://track1.perfectjourney.club/click?pid=8574&offer_id=179';" value="Foto"/>
-    </form>
-  
-  <form>
-      <input type="button" onclick="window.location.href = 'https://track1.perfectjourney.club/click?pid=8574&offer_id=179';" value="Video"/>
-    </form>
-
+  <title>SportPokaz</title>
     
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
  // Sends event to client
   vkBridge.send('VKWebAppInit');
 </script>
-    
+
+    <style>    
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+   width: 100%; /* Ширина изображений */
+ height: 100%; /* Высота изображении */
+ object-fit: cover; /* Вписываем фотографию в область */
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #5455;
+  color: white;
+  font-size: 30px;
+  padding: 10px 52px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+        
+.container .btn2 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #5455;
+  color: white;
+  font-size: 30px;
+  padding: 10px 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: red;
+        }
+    .container .btn2:hover {
+  background-color: green;
+}
+        </style>
+
 </head>
 <body>
+    
+    <div class="container">
+  <img src="1.jpg" alt="Snow">
+  <button class="btn">Video</button>
+<button class="btn2">Foto</button>
+</div> 
 
-                
+    
+    
+ 
+   
     
     
 </body>
