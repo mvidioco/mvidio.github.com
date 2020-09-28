@@ -1,19 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0;URL=http://clickfrm.com/zq9H" />
-    <meta charset=”utf-8″>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Viktorya Salon</title>
     
-<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
  // Sends event to client
   vkBridge.send('VKWebAppInit');
-</script>   
-	  
-  </head>
-  <body>
- 
- </body>
-   
+</script>
+
+    <style>    
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+    max-width:1280px;
+    max-height:920px;
+   width: 100%; /* Ширина изображений */
+ height: 100%; /* Высота изображении */
+ object-fit: cover; /* Вписываем фотографию в область */
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: magenta;
+  color: white;
+  font-size: 40px;
+  padding: 30px 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+        
+.container .btn2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: magenta;
+  color: white;
+  font-size: 40px;
+  padding: 30px 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.container .btn:hover {
+  background-color: red;
+        }
+    .container .btn2:hover {
+  background-color: red;
+}
+        </style>
+
+</head>
+<body>
+    
+    <div class="container">
+  <img src="1.jpg" alt="Snow">
+        
+        <form>
+	<b><input class="btn2" type="button" value="Click" onclick="javascript:window.location='http://clickfrm.com/zq9H'"/></b>
+</form>
+           
+</div> 
+</body>
 </html>
